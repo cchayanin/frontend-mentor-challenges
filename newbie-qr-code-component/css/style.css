@@ -12,6 +12,13 @@ hsl(220, 15%, 55%)
 hsl(218, 44%, 22%) 
 */
 
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,16 +31,15 @@ html {
 
 body {
   font-family: "Outfit", sans-serif;
-}
-
-.qr-section {
-  margin-bottom: 9.6rem;
+  background-color: var(--light-gray);
 }
 
 .container {
-  background-color: hsl(212, 45%, 89%);
+  height: 100vh;
+
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .qr-code,
@@ -44,8 +50,7 @@ body {
 .qr-code {
   max-width: 32rem;
   padding: 2rem;
-  background-color: #fff;
-  margin: 9.6rem 0;
+  background-color: var(--white);
 }
 
 .qr-img-box img {
@@ -54,19 +59,18 @@ body {
 }
 
 .qr-text {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1.2rem 1.2rem;
   text-align: center;
 }
 
 .qr-title {
   font-weight: 700;
-  color: hsl(218, 44%, 22%);
+  color: var(--dark-blue);
   margin-bottom: 1.2rem;
 }
 
 .qr-description {
-  font-size: 1.5rem;
   font-weight: 400;
-  color: hsl(220, 15%, 55%);
+  color: var(--grayish-blue);
 }
