@@ -26,6 +26,12 @@ Users should be able to:
 
 ![](./screenshot.png)
 
+Hover states
+
+![](./screenshot1.png)
+![](./screenshot2.png)
+![](./screenshot3.png)
+
 ### Links
 
 - Solution URL: [nft-preview-card](https://github.com/cchayanin/frontend-mentor-challenges/tree/main/newbie-nft-preview-card-component)
