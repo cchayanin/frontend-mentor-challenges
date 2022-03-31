@@ -58,4 +58,4 @@ Active
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@cchayanin](https://www.frontendmentor.io/profile/cchayanin)
