@@ -1,0 +1,303 @@
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background: url(../images/pattern-background-desktop.svg), var(--pale-blue);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 45rem;
+  background-color: #fff;
+  margin: 10.2rem auto;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.order-img-box img {
+  width: 100%;
+}
+
+.heading-title {
+  color: var(--dark-blue);
+  text-align: center;
+  font-size: 2.9rem;
+  font-weight: 700;
+  margin-top: 4.3rem;
+}
+
+.order-text {
+  color: var(--desaturated-blue);
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-top: 1.6rem;
+  padding: 0 6rem;
+  line-height: 1.5;
+}
+
+.order-plan {
+  background-color: var(--very-pale-blue);
+  margin: 2.6rem 5rem 3.8rem 5rem;
+  padding: 2rem;
+  border-radius: 1.2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-detail {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.plan-price{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.plan {
+  color: var(--dark-blue);
+  font-size: 1.7rem;
+}
+
+.price {
+  color: var(--desaturated-blue);
+  font-size: 1.7rem;
+}
+
+.change {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.change:link,
+.change:visited {
+  color: var(--bright-blue);
+}
+.change:hover,
+.change:active {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.btn {
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.btn-proceed {
+  background-color: var(--bright-blue);
+  color: #fff;
+  width: 79%;
+  box-shadow: 0 2rem 2rem rgba(56, 41, 224, 0.25);
+}
+
+.btn-cancel {
+  background-color: rgba(0,0,0,0);
+  color: var(--desaturated-blue);
+  width: 79%;
+}
+
+.btn-proceed:hover,
+.btn-proceed:active {
+  opacity: 0.7;
+}
+
+.btn-cancel:hover,
+.btn-cancel:active {
+  color: var(--dark-blue);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background: url(../images/pattern-background-mobile.svg) no-repeat,
+      var(--pale-blue);
+    height: 100vh;
+    padding-top: 7rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .container {
+    background-color: #fff;
+    margin: 0 auto;
+  }
+
+  .order-img-box img {
+    width: 100%;
+  }
+
+  .heading-title {
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-top: 3rem;
+  }
+
+  .order-text {
+    color: var(--desaturated-blue);
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-top: 1.6rem;
+    padding: 0 3.2rem;
+    line-height: 1.5;
+  }
+
+  .order-plan {
+    background-color: var(--very-pale-blue);
+    margin: 2.6rem 2.6rem 1.6rem 2.6rem;
+    padding: 2rem;
+    border-radius: 1.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .plan-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .plan {
+    color: var(--dark-blue);
+    font-size: 1.6rem;
+  }
+
+  .price {
+    color: var(--desaturated-blue);
+    font-size: 1.6rem;
+  }
+
+  .change {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .change:link,
+  .change:visited {
+    color: var(--bright-blue);
+  }
+  .change:hover,
+  .change:active {
+    text-decoration: none;
+    opacity: 0.7;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn {
+    border: none;
+    font-family: inherit;
+    font-weight: 700;
+    padding: 1.6rem 3.2rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+
+  .btn-proceed {
+    background-color: var(--bright-blue);
+    color: #fff;
+    width: 85%;
+  }
+
+  .btn-cancel {
+    color: var(--desaturated-blue);
+    width: 85%;
+  }
+
+  .btn-proceed:hover,
+  .btn-proceed:active {
+    opacity: 0.7;
+  }
+
+  .btn-cancel:hover,
+  .btn-cancel:active {
+    color: var(--dark-blue);
+  }
+}
